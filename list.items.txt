@@ -1,0 +1,42 @@
+$15 1. Remove the +- buttons on the bottom right of the Google maps view
+$10 SMALL BUG 2. Remove the default background search for Denver (incomplete, should not show Denver for the tiny second when doing the first search)
+SKIP   3. "Search for address" (Alex shall do this) Alex
+        - make sure the enter key works (Alex shall do this)
+$15 INCOMPLETE 4. Add four arrow images around the screen for navigation, after navigating right, left, up or down, please make sure that trees stay where they were previously located
+     (trees should not move when navigating).
+$15 INCOMPLETE 5. It would be nice to keep the trees where they are after moving.
+
+$15 IMPORTANT INCOMPLETE WITH 12 data points or more 6. Coordinates.  After adding a tree, create a JSON array in javascript and a function to add coordinates.
+        var array_trees = [];
+        array_trees.append({
+            geo_x: -58.4994
+            geo_y: 38.39333
+            x_window: 400
+            y_window: 39399
+    	    address: "43747 hemming way"
+            geo_zoom: 1.1
+            other_a: other_a,
+            other_b: other_b,
+            other_c: other_c
+            }
+	// there should be at least 12 different information pices like above
+
+$15 IMPORTANT INCOMPLETE (NEED MORE DATA IN item{})  7. One more to add is a function called plant_tree() which takes the json structure and places the tree back:
+
+function plant_tree(tree_coordinates) {
+// plant a tree given exact coordinates from #6
+}
+
+plant_tree({
+            geo_x: -58.4994
+            geo_y: 38.39333
+            x_window: 400,
+	    address: "3283223 hemming way",
+            y_window: 39399
+            geo_zoom: 1.1
+            other_a: other_a,
+            other_b: other_b,
+            other_c: other_c
+            });
+            
+            
